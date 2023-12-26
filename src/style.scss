@@ -1,0 +1,30 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-myblock {
+    box-sizing: border-box;
+    column-fill: balance;
+ 
+    &.is-style-drop-cap {
+        p:first-of-type:first-letter {
+            color: var(--drop-cap-color);
+            float: left;
+            font-size: 3.8rem;
+            line-height: 3.5rem;
+            font-size: var(--drop-cap-font-size);
+            line-height: var(--drop-cap-line-height);
+            padding-right: 0.33rem;
+        }
+    }
+
+    &.is-style-box-shadow {
+        
+        // box-shadow: 10px 5px 5px lightgrey;
+        box-shadow: 8px 3px 8px 5px rgba(0, 0, 0, 0.2);
+        
+    }
+}
